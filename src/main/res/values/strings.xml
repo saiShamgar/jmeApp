@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">JME</string>
+
+    <string name="copy_right">copyright @ 2017 P&amp;G Enterprise Software Services</string>
+
+    <string name="app_service_name">Weight Scale </string>
+
+    <string name="site_weighment">Site Weighment </string>
+    <string name="factory_weighment">Factory Weighment </string>
+    <string name="weight_details">Weight Details </string>
+    <string name="weight_load">Loading Status </string>
+    <string name="next_count_alert">Do you want to change count ?</string>
+
+    <string name="error_network">Network connection failed. Please check your internet settings.</string>
+    <string name="error_default">Sorry, we are not able to complete your request at this moment. Please try again later.</string>
+
+    <!--Factory Weight-->
+
+    <string name="factory_weightment_lot_no">Lot No</string>
+    <string name="factory_weightment_enquiry_no">Enquiry No</string>
+    <string name="factory_weightment_lot_date">Lot Date</string>
+    <string name="factory_weightment_date_format">dd/mm/yy</string>
+    <string name="factory_weightment_grader_name_helpers">Grader Name/ Helpers</string>
+    <string name="factory_weightment_agent_details">Agent Details</string>
+    <string name="capture_image">Capture Image</string>
+    <!---->
+
+</resources>

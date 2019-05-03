@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="S.No"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t0_size"
+            android:padding="@dimen/common_paddin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No. of Nets"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t0_size"
+            android:padding="@dimen/common_paddin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Wt"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t0_size"
+            android:padding="@dimen/common_paddin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Tare Wt"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t0_size"
+            android:padding="@dimen/common_paddin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Net Weight"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t0_size"
+            android:padding="@dimen/common_paddin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cumulative Weight"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t0_size"
+            android:padding="@dimen/common_paddin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Count"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t3_size"
+            android:padding="@dimen/common_paddin"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Net Weight"
+            android:textStyle="bold"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/t3_size"
+            android:padding="@dimen/common_paddin"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

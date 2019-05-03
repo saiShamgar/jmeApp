@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weight_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.servicesprovider.jme.view.HeadOnDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_layout" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_line"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date Time"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/t3_size"
+                    android:textColor="@color/color_text"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/tv_factory_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:textSize="@dimen/t0_size"
+                    android:padding="5dp"
+                    android:text="Loading.."
+                    android:background="@drawable/boarder_shape"
+                    android:textColor="@color/order_txt_color"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_line"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Number Of Nets"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/t3_size"
+                    android:textColor="@color/color_text"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/et_factory_no_of_nets"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:textSize="@dimen/t0_size"
+                    android:hint="Enter Number of nets / weight"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:background="@drawable/boarder_shape"
+                    android:textColor="@color/order_txt_color"
+                    android:textColorHint="@color/color_lite_grey"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_line"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Tare Weight / Net(kgs)"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/t3_size"
+                    android:textColor="@color/color_text"
+                    android:background="@android:color/transparent"/>
+
+                <EditText
+                    android:id="@+id/et_factory_tare_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:textSize="@dimen/t0_size"
+                    android:hint="Enter total weight (kgs)"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/boarder_shape"
+                    android:textColor="@color/order_txt_color"
+                    android:textColorHint="@color/color_lite_grey"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_line"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Total Weight (kgs)"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/t3_size"
+                    android:textColor="@color/color_text"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/et_factory_total_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:text="Get Weight"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/img_right_arrow"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/boarder_shape"
+                    android:textColorHint="@color/color_lite_grey"
+                    android:textColor="@color/order_txt_color"
+                    android:imeOptions="actionDone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_line"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Total Tare Weight (kgs)"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/t3_size"
+                    android:textColor="@color/color_text"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/tv_factory_tare_total_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:textSize="@dimen/t0_size"
+                    android:hint="0"
+                    android:padding="5dp"
+                    android:background="@drawable/boarder_shape"
+                    android:textColor="@color/order_txt_color"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttom_line"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Net Weight (kgs)"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/t3_size"
+                    android:textColor="@color/color_text"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/tv_factory_net_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|end"
+                    android:textSize="@dimen/t0_size"
+                    android:hint="0"
+                    android:padding="5dp"
+                    android:background="@drawable/boarder_shape"
+                    android:textColor="@color/order_txt_color"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/app_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="SL No."
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Time"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="No. Of Nets"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Total Weight"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Total Tare Weight"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Net Weight"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Cumulative Weight."
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/t0_size"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_factory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="55dp"/>
+                <LinearLayout
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Cumulative Wt."
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:background="@color/color_app_blue"
+                        android:textSize="@dimen/t0_size"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/btn_next_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="SAVE &amp; CONTINUE"
+                        android:gravity="center"
+                        android:background="@color/app_color"
+                        android:textSize="@dimen/t0_size"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/btn_next_screen"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="CHECK DETAILS"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@color/app_color"
+                        android:textSize="@dimen/t0_size"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.HeadOnWeight">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginTop="@dimen/common_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/factory_weightment_lot_no"
+                            android:textColor="@color/color_black"
+                            android:textSize="@dimen/t3_size"
+                            android:padding="@dimen/common_paddin" />
+
+                        <LinearLayout
+                            android:id="@+id/Ho_Hl_spinner_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_spinner_height"
+                            android:background="@drawable/boarder_shape"
+                            android:layout_marginLeft="@dimen/common_paddin"
+                            android:layout_marginRight="@dimen/common_paddin"
+                            android:padding="@dimen/margin_small"
+                            android:orientation="vertical">
+                            <Spinner
+                                android:id="@+id/Ho_Hl_spinner_lot_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/app_color"
+                                android:dropDownSelector="@color/color_black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/factory_weightment_lot_date"
+                        android:textColor="@color/color_black"
+                        android:padding="@dimen/common_paddin"
+                        android:textSize="@dimen/t3_size"/>
+
+                    <TextView
+                        android:id="@+id/tv_Ho_Hl_lot_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_box"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/t4_size"
+                        android:layout_marginLeft="@dimen/common_paddin"
+                        android:layout_marginRight="@dimen/common_paddin"
+                        android:paddingTop="@dimen/t1_padding"
+                        android:paddingBottom="@dimen/t1_padding"
+                        android:paddingLeft="@dimen/common_paddin"
+                        android:paddingRight="@dimen/common_paddin"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recieved Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/t3_size"
+                        android:padding="@dimen/common_paddin"/>
+
+                    <TextView
+                        android:id="@+id/tv_Ho_Hl_recieved_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_box"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/t4_size"
+                        android:layout_marginLeft="@dimen/common_paddin"
+                        android:layout_marginRight="@dimen/common_paddin"
+                        android:paddingTop="@dimen/t1_padding"
+                        android:paddingBottom="@dimen/t1_padding"
+                        android:paddingLeft="@dimen/common_paddin"
+                        android:paddingRight="@dimen/common_paddin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Material Group"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/t3_size"
+                        android:padding="@dimen/common_paddin"/>
+
+                    <TextView
+                        android:id="@+id/tv_Ho_Hl_material_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_box"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/t4_size"
+                        android:layout_marginLeft="@dimen/common_paddin"
+                        android:layout_marginRight="@dimen/common_paddin"
+                        android:paddingTop="@dimen/t1_padding"
+                        android:paddingBottom="@dimen/t1_padding"
+                        android:paddingLeft="@dimen/common_paddin"
+                        android:paddingRight="@dimen/common_paddin"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Variety Name"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/t3_size"
+                        android:padding="@dimen/common_paddin"/>
+
+                    <TextView
+                        android:id="@+id/tv_Ho_Hl_variety_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_box"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/t4_size"
+                        android:layout_marginLeft="@dimen/common_paddin"
+                        android:layout_marginRight="@dimen/common_paddin"
+                        android:paddingTop="@dimen/t1_padding"
+                        android:paddingBottom="@dimen/t1_padding"
+                        android:paddingLeft="@dimen/common_paddin"
+                        android:paddingRight="@dimen/common_paddin"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/common_margin">
+
+                <Button
+                    android:id="@+id/btn_Ho_Hl_new"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="New"
+                    android:textSize="@dimen/t3_size"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/common_margin"/>
+
+                <Button
+                    android:id="@+id/btn_Ho_Hl_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="Save"
+                    android:textSize="@dimen/t3_size"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/common_margin"/>
+
+                <Button
+                    android:id="@+id/btn_Ho_Hl_next"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="Next"
+                    android:textSize="@dimen/t3_size"
+                    android:textAllCaps="false"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

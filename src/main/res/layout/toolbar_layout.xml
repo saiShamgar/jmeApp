@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        style="@style/MyToolbarStyle"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1">
+
+            <TextView
+                android:id="@+id/toolbar_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:layout_alignBottom="@+id/toolbar_title"
+                android:textSize="9sp"
+                android:layout_marginTop="@dimen/margin_small"
+
+                android:text=" vesrion 1.0.0"
+                android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="@dimen/t1_size"
+        android:text="jme"
+        android:textColor="@color/color_white" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/spinner_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="@dimen/t1_size"
+                android:textColor="@color/white"
+                android:text="Count"/>
+        <Spinner
+            android:id="@+id/spinner_nav"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:backgroundTint="@color/color_white"
+            android:gravity="right|center"
+            android:layout_weight="1"
+            android:layout_gravity="right|center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

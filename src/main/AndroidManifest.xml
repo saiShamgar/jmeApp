@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.servicesprovider.jme">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:name=".MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".view.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SiteWeight"
+            android:screenOrientation="reverseLandscape" />
+        <activity
+            android:name=".view.FirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SiteWeighment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.WeightLoadMachine"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.WeightDetails"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".customsevices.UsbService"
+            android:description="@string/app_service_name"
+            android:enabled="true" />
+        <service
+            android:name=".utils.GpsLocation"
+            android:enabled="true" />
+
+        <activity
+            android:name=".view.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.HeadOnWeight"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.HeadOnDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.PhotoCapture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ShowInsertedDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.FactoryWeighment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.HeadOnInsertedDetails"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".view.HeadOnHeadLess"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.HeadOnHeadLessDetails"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.HeadOnHeadLessInsertedDetails"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

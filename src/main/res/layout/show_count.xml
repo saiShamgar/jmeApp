@@ -1,0 +1,11 @@
+<TextView
+    android:id="@+id/txt_show_count"
+    android:layout_height="40dp"
+    android:layout_width="match_parent"
+    android:text="hhhhh"
+    android:gravity="center"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:textColor="@color/white"
+    android:background="@color/app_color"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
